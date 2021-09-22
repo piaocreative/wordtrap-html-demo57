@@ -1,0 +1,179 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+#search {
+	position: absolute;
+	width: 100%;
+	margin: auto;
+	top: -4rem;
+
+	ul {
+		li {
+			padding: 2rem 2.5rem;
+			background-color: $white;
+			border: 1px solid #e5e5e5;
+
+			a, p {
+				font-family: $body-font;
+				font-size: 0.875rem;
+			}
+
+			a {
+				text-decoration: none;
+				color: $dark;
+
+				&.dropdown-toggle {
+					&:after {
+						margin-left: 4.5rem;
+					}
+				}
+			}
+
+			&:last-child {
+				padding: 0.89rem;
+			}
+
+			&:not(:last-child) {
+				border-right: 0;
+			}
+		}
+
+		button {
+			font-family: $body-font;
+			font-size: 0.875rem;
+			font-weight: 600;
+			color: $white;
+			text-transform: uppercase;
+			padding: 1.5rem 2.5rem;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		position: relative;
+		top: 0;
+	}
+}
+
+.control-arrow {
+	position: absolute;
+	bottom: 0.75rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 12rem;
+
+	@include media-breakpoint-down(lg) {
+		bottom: -1.2rem;
+	}
+}
+
+.carousel-indicator {
+	span {
+		font-family: $body-font;
+		font-size: 0.875rem;
+		font-weight: 700;
+
+		&:nth-child(2) {
+			color: #cdcdcd;
+		}
+	}
+
+	span {
+		color: $theme-color;
+	}
+
+	li {
+		font-size: 0.35rem;
+		color: #ececec;
+	}
+}
+
+.about-us-link {
+	display: inline-block;
+	font-size: 0.875rem;
+	padding: 1.2rem 3rem;
+	background-color: $theme-color;
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.selection {
+	position: relative;
+	margin-bottom: 0.875rem;
+
+	.selection-image {
+		img {
+			width: 100%;
+		}
+	}
+
+	.selection-details {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.selection-title {
+		font-family: $heading-font;
+		font-weight: 300;
+		color: $white;
+		text-transform: uppercase;
+	}
+}
+
+.slick-prev::before, .slick-next:before {
+	font-size: 1.5rem;
+	opacity: 1;
+	color: $theme-color;
+
+	@include media-breakpoint-down(lg) {
+	   display: none;
+   }
+}
+
+.slick-dots {
+	bottom: -3rem;
+
+	li {
+		button {
+			&:before {
+				color: $theme-color;
+			}
+		}
+	}
+}
+
+.slick-prev {
+	left: 52rem;
+
+	@include media-breakpoint-down(lg) {
+	   display: none !important;
+   }
+}
+
+.slick-next {
+   right: 52rem;
+
+   @include media-breakpoint-down(lg) {
+	   display: none !important;
+   }
+}
+
+.slick-track {
+	@include media-breakpoint-down(lg) {
+		left: 0 !important;
+	}
+}

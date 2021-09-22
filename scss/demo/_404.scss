@@ -1,0 +1,58 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+.error-404 {
+    position: relative;
+
+    .error-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        h4 {
+            font-size: 1.875rem;
+        }
+
+        h3 {
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 1.5rem 3.5rem;
+            position: relative;
+            top: 22rem;
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .error-banner {
+            img {
+                height: 38rem
+            }
+        }
+
+        .error-content {
+            a { 
+                top: 13rem;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .error-banner {
+            img {
+                height: 22rem
+            }
+        }
+
+        .error-content {
+            top: -2rem;
+        }
+    }
+}

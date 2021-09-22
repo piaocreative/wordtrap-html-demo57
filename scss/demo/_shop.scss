@@ -1,0 +1,285 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* product
+-----------------------------------------------------------------*/
+.product {
+	margin-bottom: 1.875rem;
+
+	.product-image {
+		position: relative;
+
+		img {
+			width: 100%;
+		}
+
+		> a:nth-of-type(2) {
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			@include transition(all 0.3s ease-in-out);
+		}
+	}
+
+	.product-details {
+		position: absolute;
+		top: 2rem;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		
+		@include media-breakpoint-down(lg) {
+			position: relative;
+			top: 0;
+		}
+	}
+
+	.product-price {
+		font-family: $heading-font;
+		font-size: 1.875rem;
+		font-weight: 300;
+	}
+
+	.product-title {
+		font-family: $heading-font;
+		font-weight: 300;
+		line-height: 1;
+	}
+
+	.product-info {
+		font-family: $body-font;
+		font-size: 1rem;
+		color: #7f7f7f;
+		border-top: 1px solid #e5e5e5;
+		border-bottom: 1px solid #e5e5e5;
+		padding: 1rem 0;
+
+		i {
+			font-size: 1.125rem;
+		}
+	}
+
+	.product-btn {
+		a {
+			font-size: 0.875rem;
+			font-weight: 600;
+			padding: 1.5rem 2.5rem;
+			color: $white;
+		}
+	}
+
+	.onsale {
+		font-family: $body-font;
+		font-size: 0.815rem;
+		color: $white;
+		padding: 0.5rem 0.3rem;
+		background-color: $theme-color;
+		border-radius: 50%;
+	}
+}
+
+/* Ads
+-----------------------------------------------------------------*/
+.ads {
+    position: relative;
+    display: block;
+	margin-bottom: 1.875rem;
+
+	.ads-bg {
+		img {
+			height: 100%;
+
+			@include media-breakpoint-down(lg) {
+				height: 25rem;
+			}
+		}
+	}
+
+	&.ads1 {
+		.ads-body {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			height: 100%;
+
+			h3 {
+				font-size: 2.875rem;
+				line-height: 1;
+			}
+
+			h4 {
+				font-size: 1.875rem;
+				font-weight: 500;
+			}
+
+			a {
+				letter-spacing: 0.05rem;
+			}
+
+			.onsale {
+				font-family: $body-font;
+				font-size: 0.875rem;
+				color: $white;
+				padding: 1rem;
+				font-weight: 600;
+				border: 3px solid $white;
+				letter-spacing: 0.05rem;
+			}
+
+			@include media-breakpoint-down(lg) {
+				padding: 1rem;
+			}
+		}
+	}
+}
+
+.houses {
+	.slick-slide {
+		margin: auto 1rem;
+	}
+
+	.slick-track {
+		left: 1rem;
+	}
+
+	.slick-prev, .slick-next {
+		top: 21.5rem;
+	}
+}
+
+.house {
+	position: relative;
+
+	.house-image {
+		img {
+			width: 100%;
+		}
+	}
+
+	.house-details {
+		padding: 0.875rem 0;
+
+		.house-title {
+			font-family: $heading-font;
+			font-size: 1.25rem;
+			font-weight: 500;
+		}
+
+		.house-price {
+			font-family: $heading-font;
+			font-size: 1.25rem;
+			font-weight: 500;
+			color: $theme-color;
+
+			span {
+				font-size: 0.875rem;
+				font-weight: 300;
+				letter-spacing: 0.05rem;
+			}
+		}
+	}
+
+	.onsale {
+		position: absolute;
+		top: 1.5rem;
+		left: 1.5rem;
+		font-family: $body-font;
+		font-size: 0.815rem;
+		color: $white;
+		padding: 0rem 0.3rem;
+		background-color: $theme-color;
+		border-radius: 50%;
+	}
+}
+
+.segments {
+	.segment {
+		border: 1px solid #f5f2f2;
+		padding: 1rem;
+	
+		.segment-image {
+			img {
+				width: 11rem;
+			}
+		}
+	
+		.segment-details {
+			.segment-title {
+				font-family: $heading-font;
+				font-weight: 500;
+				font-size: 1.25rem;
+			}
+	
+			.segment-btn {
+				a {
+					font-family: $heading-font;
+					font-size: 0.875rem;
+					font-weight: 400;
+					color: #127dbb;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.slick-track {
+		left: -4rem;
+	}
+	
+	.slick-slide {
+		margin: auto 0.75rem;
+	}
+
+	.slick-prev, .slick-next {
+		top: 13.5rem;
+	}
+}
+
+.testimonials {
+	.slick-slide {
+		margin: auto 0.75rem;
+	}
+
+	.slick-prev, .slick-next {
+		top: 18rem;
+	}
+
+	.testimonial {
+		border: 1px solid #e5e5e5;
+		padding: 2rem;
+	
+		.testimonial-image {
+			img {
+				width: 10rem;
+			}
+		}
+	
+		.testimonial-details {
+			.testimonial-title {
+				font-family: $heading-font;
+				font-weight: 500;
+				color: $theme-color;
+			}
+		}
+	}
+}
