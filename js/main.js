@@ -45,11 +45,19 @@ $( document ).ready( function() {
             arrows: false,
             responsive: [
                 {
-                    breakpoint: 992,
+                    breakpoint: 1600,
+                    settings: {
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 1024,
                     settings: {
                         infinite: true,
                         slidesToShow: 2,
-                        slidesToScroll: 2,
+                        slidesToScroll: 1,
                     }
                 },
                 {
@@ -137,11 +145,27 @@ $( document ).ready( function() {
             arrows: false,
             responsive: [
                 {
+                    breakpoint: 1600,
+                    settings: {
+                        infinite: true,
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        infinite: true,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
                     breakpoint: 992,
                     settings: {
                         infinite: true,
                         slidesToShow: 2,
-                        slidesToScroll: 2,
+                        slidesToScroll: 1,
                     }
                 },
                 {

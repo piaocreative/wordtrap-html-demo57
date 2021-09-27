@@ -30,6 +30,14 @@
         }
     }
 
+    @include media-breakpoint-down(xl) {
+        .error-content {
+            a { 
+                top: 16rem;
+            }
+        }
+    }
+
     @include media-breakpoint-down(lg) {
         .error-banner {
             img {
