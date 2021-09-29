@@ -25,16 +25,27 @@
 		color: $black;
 		text-transform: uppercase;
 	}
+}
 
-	.sub-title {
-		font-weight: 500;
-		font-size: 0.875rem;
-		color: #969696;
-		font-family: $heading-font;
+.breadcrumb {
+	i {
+		font-size: 0.25rem;
+		color: $theme-color;
+	}
 
-		i {
-			font-size: 0.25rem;
-			color: $theme-color;
+	ul {
+		li {
+			a {
+				font-family: $heading-font;
+				font-size: 0.875rem;
+				font-weight: 500;
+				text-decoration: none;
+				color: #969696;
+	
+				&.active {
+					color: $theme-color;
+				}
+			}
 		}
 	}
 }
